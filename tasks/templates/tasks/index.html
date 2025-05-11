@@ -7,12 +7,15 @@
     <meta name="author" content="Vineet">
     <link rel="stylesheet" href="">
     <title>WeekPlanner</title>
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <!-- {% load static %} -->
+    <!-- <link rel="stylesheet" href="{% static 'css/styles.css' %}"> -->
+    <link rel="stylesheet" href="../../static/css/styles.css">
 </head>
 
 <body>
-    <h1>Welcome to the Week Planner</h1>
+    <section>
+        <h1>Welcome to the Week Planner</h1>
+    </section>
     <nav>
         <ul>
             <li><a href="{% url 'monday' %}">Monday</a></li>
@@ -24,6 +27,13 @@
             <li><a href="{% url 'sunday' %}">Sunday</a></li>
         </ul>
     </nav>
+    <section>
+        <div class="card">
+            <h2>
+                my laptop is hanging i will complete soon -- too many running tasks
+            </h2>
+        </div>
+    </section>
 </body>
 
 </html>
