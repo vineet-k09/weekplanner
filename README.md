@@ -1,4 +1,5 @@
 # WeekPlanner
+
 # WeekPlanner
 
 A minimal Django app for navigating through daily task pages, showcasing simple routing and template rendering.
@@ -32,18 +33,19 @@ return render(request, 'tasks/index.html')
 def monday(request):
 return render(request, 'tasks/monday.html')
 
-## ...similarly for other days
+### ...similarly for other days
 
 ## Step 5: tasks/urls.py
 
 from django.urls import path
 from . import views
 
-
 urlpatterns = [
 path('', views.index, name='index'),
 path('monday/', views.monday, name='monday'),
-# ...add more days here
+
+### ...add more days here
+
 ]
 
 ## Step 6: weekplanner/urls.py
