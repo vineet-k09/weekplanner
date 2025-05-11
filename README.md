@@ -16,9 +16,11 @@ python manage.py startapp tasks
 
 ## Step 2: weekplanner/settings.py
 
+```python
 INSTALLED_APPS = [
 'tasks',
 ]
+```
 
 ## Step 3: Place HTML files inside
 
