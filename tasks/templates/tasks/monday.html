@@ -7,10 +7,12 @@
     <meta name="author" content="Vineet">
     <link rel="stylesheet" href="">
     <title>Monday</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 
 <body>
-    <h1>{{ day|title }}</h1>
+    <h1>Monday</h1>
     <nav>
         <ul>
             <li><a href="{% url 'index' %}">Home</a></li>

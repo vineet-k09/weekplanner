@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="author" content="Vineet">
     <link rel="stylesheet" href="">
-    <title>Monday</title>
+    <title>Wednesday</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 
 <body>
-    <h1>{{ day|title }}</h1>
+    <h1>Wednesday</h1>
     <nav>
         <ul>
             <li><a href="{% url 'index' %}">Home</a></li>
