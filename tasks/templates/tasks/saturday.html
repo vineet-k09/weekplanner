@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="Vineet">
+    <link rel="stylesheet" href="">
+    <title>Monday</title>
+</head>
+
+<body>
+    <h1>{{ day|title }}</h1>
+    <nav>
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'monday' %}">Monday</a></li>
+            <li><a href="{% url 'tuesday' %}">Tuesday</a></li>
+            <li><a href="{% url 'wednesday' %}">Wednesday</a></li>
+            <li><a href="{% url 'thursday' %}">Thursday</a></li>
+            <li><a href="{% url 'friday' %}">Friday</a></li>
+            <li><a href="{% url 'saturday' %}">Saturday</a></li>
+            <li><a href="{% url 'sunday' %}">Sunday</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
