@@ -14,11 +14,13 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
+# from django.contrib import admin
 from django.urls import path, include
+from django.shortcuts import redirect #for redirecting to the index page FROM ROOT URL
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    # path('admin/', admin.site.urls), -- not really needed tbh
+    path('', lambda request: redirect('/tasks/')),
     path('tasks/', include('tasks.urls')), 
     # Include the URLs from the tasks app 
     # This allows us to access the tasks app URLs with the prefix 'tasks/'
