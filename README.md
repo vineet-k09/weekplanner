@@ -46,3 +46,5 @@ requirements.txt
 Django>=3.2,<4 --for installing
 gunicorn --for deployement
 
+**9**
+Adding allowed hosts to deploy on <a>weekplanner-zntz.onrender.com</a>

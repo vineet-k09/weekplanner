@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-dlv9xvl_2p&d!f&^1v#bg&h^1v#0r@31s&r5a5o@tr7zzp$54r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'weekplanner-zntz.onrender.com', 'localhost', '127.0.0.1'
+]
 
 
 # Application definition
