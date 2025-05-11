@@ -70,7 +70,7 @@ gunicorn
 
 ## Step 8: weekplanner/settings.py
 
-ALLOWED_HOSTS = ['weekplanner-zntz.onrender.com']
+```ALLOWED_HOSTS = ['weekplanner-zntz.onrender.com']```
 
 # 🚀 Run Dev
 
