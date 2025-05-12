@@ -11,7 +11,7 @@ A minimal Django app for navigating through daily task pages, showcasing simple 
 ```bash
 django-admin startproject weekplanner
 cd weekplanner
-python manage.py startapp tasks 
+python manage.py startapp tasks
 ```
 
 ## Step 2: weekplanner/settings.py
@@ -50,6 +50,7 @@ path('monday/', views.monday, name='monday'),
 ...add more days here
 ]
 ```
+
 ## Step 6: weekplanner/urls.py
 
 ```python
@@ -61,6 +62,7 @@ path('admin/', admin.site.urls),
 path('tasks/', include('tasks.urls')),
 ]
 ```
+
 ## Step 7: requirements.txt
 
 Django>=3.2,<4
@@ -74,7 +76,7 @@ ALLOWED_HOSTS = ['weekplanner-zntz.onrender.com']
 
 ## Create virtual environment at root level
 
-```python -m venv .venv```
+`python -m venv .venv`
 
 ## Activate virtual environment
 
@@ -84,7 +86,7 @@ ALLOWED_HOSTS = ['weekplanner-zntz.onrender.com']
 
 (.venv) python manage.py runserver
 
-```pip install django``` -- incase shows module not found
+`pip install django` -- incase shows module not found
 technically it should
 
 # 👀 Adding styles
@@ -101,3 +103,38 @@ BASE_DIR / "static", # This points to the static directory
 ]
 ```
 
+## styles config for serving thru Render
+
+### settings.py
+
+```python
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [BASE_DIR / "static"]
+STATIC_ROOT = BASE_DIR / "staticfiles"
+```
+
+`python manage.py collectstatic` -- before each deployment it seems
+
+### settings.py
+
+```python
+MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+    # ... the rest
+]
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+```
+
+`pip install whitenoise` -- WhiteNoise lets Django serve static files without needing Nginx or some external server.
+
+### To autogenerate requirements.txt
+
+`pip freeze > requirements.txt`
+
+## Procfile
+
+Tell your platform how to run your app
+Put this file in your root directory (no extension), and inside write:
+
+`web: gunicorn weekplanner.wsgi:application`

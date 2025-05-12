@@ -1,0 +1,1 @@
+web: gunicorn weekplanner.wsgi:application

@@ -1,0 +1,60 @@
+body {
+    background-color: #020403;
+    color: white;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+section h1 {
+    color: whites;
+    text-shadow:
+        -2px -2px 0 #ffffff 2px -2px 0 #ffffff -2px 2px 0 #ffffff 2px 2px 0 #ffffff -3px 0px 0 #ffffff 3px 0px 0 #ffffff 0px -3px 0 #ffffff 0px 3px 0 #ffffff
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: 0.5;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    font-size: 20px;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.5;
+    box-sizing: border-box;
+}
+
+nav ul li:hover {
+    background-color: #000000;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    transition: 0.5s;
+}
+
+nav ul li:hover a {
+    color: whitesmoke;
+    transition: 0.5;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 0;
+    justify-content: center;
+}
+
+.card {
+    background-color: rgb(53, 53, 53);
+    height: 20vh;
+    width: 20vw;
+}
