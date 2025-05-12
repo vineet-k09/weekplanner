@@ -1,6 +1,6 @@
 # WeekPlanner
 
-(## WeekPlanner)[weekplanner-zntz.onrender.com/tasks/]
+[**WeekPlanner**](weekplanner-zntz.onrender.com/tasks/)
 
 A minimal Django app for navigating through daily task pages, showcasing simple routing and template rendering.
 
