@@ -82,7 +82,7 @@ gunicorn
 
 ## Activate virtual environment
 
-.venv\Scripts\activate
+```.venv\Scripts\activate```
 
 ## Run development server
 
@@ -105,7 +105,7 @@ BASE_DIR / "static", # This points to the static directory
 ]
 ```
 
-## styles config for serving thru Render
+## Styles config for serving thru Render
 
 ### settings.py
 
