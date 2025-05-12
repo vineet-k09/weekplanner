@@ -16,9 +16,11 @@ python manage.py startapp tasks
 
 ## Step 2: weekplanner/settings.py
 
+```python
 INSTALLED_APPS = [
 'tasks',
 ]
+```
 
 ## Step 3: Place HTML files inside
 
@@ -70,7 +72,7 @@ gunicorn
 
 ## Step 8: weekplanner/settings.py
 
-ALLOWED_HOSTS = ['weekplanner-zntz.onrender.com']
+```ALLOWED_HOSTS = ['weekplanner-zntz.onrender.com']```
 
 # 🚀 Run Dev
 
