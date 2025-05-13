@@ -53,6 +53,10 @@ ul {
     padding: 30px;
 }
 
+.container .card:hover {
+transform: scale(1.2);
+}
+
 .container {
     padding: 0;
     margin: 0;
